@@ -115,7 +115,7 @@ header {
     font-weight: 500;
 }
 
-.hero .box-hero .box:nth-child(1) button {
+.hero .box-hero .box:nth-child(1) a {
     width: auto;
     height: auto;
     background-color: #46651F;
@@ -125,13 +125,14 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
 
-.hero .box-hero .box:nth-child(1) button:hover {
+.hero .box-hero .box:nth-child(1) a:hover {
     background-color: #314b11;
     transition: all 0.5s ease;
     -webkit-transition: all 0.3s ease;
@@ -151,6 +152,12 @@ header {
     align-items: center;
     padding: 100px 0 50px 0;
     background-color: #46651F;
+}
+
+.services-img {
+    width: 200px;
+    display: block;
+    margin: 20px auto 50px auto;
 }
 
 .services .box-services {
@@ -179,19 +186,24 @@ header {
     text-align: left;
 }
 
-.pantai {
+.hasil {
     padding: 50px 0 50px 0;
     background-color: #fff;
 }
 
-.pantai .box-pantai {
+.title-hasil {
+    font-size: 30px;
+    padding: 80px 0;
+}
+
+.hasil .box-hasil {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     row-gap: 50px;
 }
 
-.pantai .box-pantai .box {
+.hasil .box-hasil .box {
     text-align: center;
     color: #000;
     transition: all 0.3s ease;
@@ -201,7 +213,7 @@ header {
     -o-transition: all 0.3s ease;
 }
 
-.pantai .box-pantai .box:hover {
+.hasil .box-hasil .box:hover {
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
@@ -209,7 +221,7 @@ header {
     -o-transform: translateY(-20px);
 }
 
-.pantai .box-pantai .box img {
+.hasil .box-hasil .box img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -220,12 +232,12 @@ header {
     -o-border-radius: 5px;
 }
 
-.pantai .box-pantai .box p {
+.hasil .box-hasil .box p {
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.pantai .box-pantai .box button {
+.hasil .box-hasil .box button {
     width: 120px;
     height: 40px;
     border: none;
@@ -240,13 +252,34 @@ header {
     cursor: pointer;
 }
 
-.pantai .box-pantai .box button:hover {
+.hasil .box-hasil .box button:hover {
     background-color: #46651F;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+}
+
+.price {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.price__bg {
+    background-color: var(--first-color);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.price__container {
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.price__title {
+    font-size: 35px;
+    color: #000;
 }
 
 .daftar {
@@ -480,10 +513,11 @@ header {
         display: block;
     }
     .navbar .box-navbar .menu {
+        padding: 20px 0;
         position: absolute;
         flex-direction: column;
         width: 100%;
-        height: 200px;
+        height: auto;
         row-gap: 20px;
         justify-content: center;
         align-items: center;
@@ -569,7 +603,7 @@ header {
     .hero .box-hero .box:nth-child(2) img {
         width: 100%;
     }
-    .pantai .box-pantai {
+    .hasil .box-hasil {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
